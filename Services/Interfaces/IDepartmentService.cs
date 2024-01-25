@@ -8,9 +8,10 @@ namespace FinalExam_B14.Services.Interfaces
     public interface IDepartmentService
     {
         Task<bool> CreateDepartmentAsync(DepartmentCreateVM vm,ModelStateDictionary ModelState);
-        Task<bool> UpdateDepartmentAsuync(DepartmentUpdateVM vm, ModelStateDictionary ModelState);
+        Task<bool> UpdateDepartmentAsync(DepartmentUpdateVM vm, ModelStateDictionary ModelState);
         Task<bool> DeleteAsync(int id);
         Task<PaginationVM<Department>> GetAllDepartmentsAsync(int page = 1);
         Task<Department> GetDepartmentByIdAsync(int id);
+        Task<DepartmentUpdateVM> GetUpdatedDepartmentAsync(int id);
     }
 }

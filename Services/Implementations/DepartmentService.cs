@@ -39,7 +39,7 @@ namespace FinalExam_B14.Services.Implementations
         public async Task<bool> DeleteAsync(int id)
         {
             var department = await _repository.GetSingleAsync(x => x.Id == id);
-            if (department != null)
+            if (department == null)
             {
                 return false;
             }
@@ -64,7 +64,18 @@ namespace FinalExam_B14.Services.Implementations
             return department;
         }
 
-        public async Task<bool> UpdateDepartmentAsuync(DepartmentUpdateVM vm, ModelStateDictionary ModelState)
+        public async Task<DepartmentUpdateVM> GetUpdatedDepartmentAsync(int id)
+        {
+            var department = await GetDepartmentByIdAsync(id);
+            if (department is null)
+                return null;
+
+            DepartmentUpdateVM vm = new()
+            { Id = id, Name = department.Name };
+            return vm;
+        }
+
+        public async Task<bool> UpdateDepartmentAsync(DepartmentUpdateVM vm, ModelStateDictionary ModelState)
         {
             if (!ModelState.IsValid)
             {
