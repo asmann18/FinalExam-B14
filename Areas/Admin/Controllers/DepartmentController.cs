@@ -61,4 +61,12 @@ public class DepartmentController : Controller
         return NotFound();
 
     }
+
+    public async Task<IActionResult> Detail(int id)
+    {
+        var department=await _service.GetDepartmentByIdAsync(id);
+        if(department == null)
+            return NotFound();
+        return View(department);
+    }
 }
