@@ -4,13 +4,13 @@ namespace FinalExam_B14.Utilities
 {
     public static class IFormFileExtension
     {
-        public async static Task<string> CreateFile(this IFormFile file, params string[] files)
+        public async static Task<string> CreateFile(this IFormFile file, params string[] paths)
         {
             string fileName = Guid.NewGuid().ToString() + file.FileName.Substring(file.FileName.LastIndexOf('.'));
 
 
             string path = "";
-            foreach (string filename in files)
+            foreach (string filename in paths)
             {
                 path = Path.Combine(path, filename);
             }
@@ -19,7 +19,24 @@ namespace FinalExam_B14.Utilities
             {
                 await file.CopyToAsync(stream);
             }
-            return path;
+            return fileName;
+        }
+
+        public static void DeleteFile(this string file, params string[] paths)
+        {
+
+            string path = "";
+            foreach (string filename in paths)
+            {
+                path = Path.Combine(path, filename);
+            }
+            path = Path.Combine(path, file);
+
+            if(File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
         }
 
         public static bool ValidateType(this IFormFile file, string type = "image")

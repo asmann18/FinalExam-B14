@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TsvwV+pIc3UNdw1gg40Gmc8DAE4XNvInMlYYkY1OAWs=",
+  "Hash": "WSMJ3uNrKcwU1xgOC+TngKgrWJm/lmcsuU1/iKsqdso=",
   "Source": "FinalExam-B14",
   "BasePath": "_content/FinalExam-B14",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\ca.r215.11\\Desktop\\FinalExam-B14\\wwwroot\\assets\\img\\02cfa0fc-1e22-4c67-a40a-393c640f89c5.jpg",
+      "SourceId": "FinalExam-B14",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ca.r215.11\\Desktop\\FinalExam-B14\\wwwroot\\",
+      "BasePath": "_content/FinalExam-B14",
+      "RelativePath": "assets/img/02cfa0fc-1e22-4c67-a40a-393c640f89c5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\02cfa0fc-1e22-4c67-a40a-393c640f89c5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ca.r215.11\\Desktop\\FinalExam-B14\\wwwroot\\assets\\img\\5a2f484f-8052-4014-9454-488d994c40ff.jpg",
+      "SourceId": "FinalExam-B14",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ca.r215.11\\Desktop\\FinalExam-B14\\wwwroot\\",
+      "BasePath": "_content/FinalExam-B14",
+      "RelativePath": "assets/img/5a2f484f-8052-4014-9454-488d994c40ff.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\5a2f484f-8052-4014-9454-488d994c40ff.jpg"
     },
     {
       "Identity": "C:\\Users\\ca.r215.11\\Desktop\\FinalExam-B14\\wwwroot\\assets\\img\\about-bg.png",

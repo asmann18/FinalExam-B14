@@ -30,6 +30,6 @@ namespace FinalExam_B14.Areas.Admin.ViewModels.EmployeeVMs
         public string LinkedInLink { get; set; } = null!;
 
         public int DepartmentId { get; set; }
-        public SelectList Departments { get; set; }
+        public SelectList? Departments { get; set; }
     }
 }

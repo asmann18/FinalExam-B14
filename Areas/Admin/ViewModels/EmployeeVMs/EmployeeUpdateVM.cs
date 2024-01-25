@@ -5,6 +5,7 @@ namespace FinalExam_B14.Areas.Admin.ViewModels.EmployeeVMs
 {
     public class EmployeeUpdateVM
     {
+        public int Id { get; set; }
         [MaxLength(100)]
         [MinLength(3)]
         public string FullName { get; set; } = null!;
@@ -29,6 +30,6 @@ namespace FinalExam_B14.Areas.Admin.ViewModels.EmployeeVMs
         public string LinkedInLink { get; set; } = null!;
 
         public int DepartmentId { get; set; }
-        public SelectList Departments { get; set; }
+        public SelectList? Departments { get; set; }
     }
 }

@@ -1,10 +1,14 @@
 ﻿using FinalExam_B14.Areas.Admin.ViewModels.DepartmentVMs;
 using FinalExam_B14.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace FinalExam_B14.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
+
 public class DepartmentController : Controller
 {
     private readonly IDepartmentService _service;

@@ -12,7 +12,9 @@ namespace FinalExam_B14.Services.Interfaces
         Task<bool> UpdateEmployeeAsync(EmployeeUpdateVM vm, ModelStateDictionary ModelState);
         Task<bool> DeleteAsync(int id);
         Task<PaginationVM<Employee>> GetAllEmployeesAsync(int page = 1);
-        Task<Department> GetEmployeeByIdAsync(int id);
-        Task<DepartmentUpdateVM> GetUpdatedEmployeeAsync(int id);
+        Task<Employee> GetEmployeeByIdAsync(int id);
+        Task<EmployeeUpdateVM> GetUpdatedEmployeeAsync(int id);
+        EmployeeCreateVM GetCreatedEmployee(EmployeeCreateVM vm);
+        EmployeeUpdateVM GetUpdatedEmployee(EmployeeUpdateVM vm);
     }
 }

@@ -1,0 +1,16 @@
+﻿@model Employee
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Employee Info</h5>
+        <p class="card-text">@Model.FullName</p>
+        <img src="~/assets/img/@Model.ImagePath" />
+        <p class="card-text">@Model.Description</p>
+        <p class="card-text">Department: @Model.Department.Name</p>
+        <p class="card-text">facebook @Model.FacebookLink</p>
+        <p class="card-text">twitter @Model.TwitterLink</p>
+        <p class="card-text">instagram @Model.InstagramLink</p>
+        <p class="card-text">linkedin @Model.LinkedInLink</p>
+        <a asp-action="Index">Back</a>
+
+    </div>
+</div>
