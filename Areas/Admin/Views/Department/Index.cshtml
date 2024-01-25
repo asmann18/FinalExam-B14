@@ -1,0 +1,50 @@
+﻿@model PaginationVM<Department>
+@{
+    int count = 1;
+}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Striped Table</h4>
+            <p class="card-description">
+                Add class <code>.table-striped</code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Actions
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @foreach (var department in Model.Items)
+                        {
+                            <tr>
+                                <td class="py-1">
+                                    @count++
+                                </td>
+                                <td>
+                                    @department.Name
+                                </td>
+                                <td>
+                                   <a asp-action="Detail" class="btn btn-primary" asp-route-id="@department.Id">Update</a>
+                                </td>
+                     
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
